@@ -30,18 +30,20 @@ export default function App() {
     </div>
     );
   }
-
-  return (
-    <div className ="app-container">
-      <h1>Blog Posts</h1>
-      <div className ="blog-posts">
-        {posts.map((post,index) => (
-          <div key = {post.id} className="post">
-            <h2>{index + 1}.{post.title}</h2>
-            <p>{post.body}</p>
-          </div>
-      ))}
-      </div>
-    </div>
-  );
-}
+  
+  return (     <
+    div className="app-container">       
+    <h1>Posts</h1> {/Main heading for the blog posts/}       
+    <div className="blog-posts">         
+    {posts.map((post, index) => (           
+    <div key={post.id} className="post">            
+    {/* Display the post title with a sequential number*/}             
+    <h2>               {index + 1}.{post.title}             </h2> 
+                {/ Display the post body */}  
+                           <p>{post.body}</p>  
+                                    </div>      
+                                       ))}       
+                                       </div>     
+                                       </div>  
+                                       );
+                                       }
