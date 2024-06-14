@@ -9,7 +9,7 @@ export default function App() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts");
 
         if (!response.ok) {
           throw new Error("Failed to fetch blog posts");
@@ -26,7 +26,7 @@ export default function App() {
  
   if (error) {
     return ( <div className = "error-message">
-      <h1>Data fetching failed</h1>
+      <h1>Failed to fetch blog posts</h1>
     </div>
     );
   }
